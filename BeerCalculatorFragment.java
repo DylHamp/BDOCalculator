@@ -43,8 +43,15 @@ public class BeerCalculatorFragment extends Fragment {
         @Override
         public View getView(int posisition, View convertView, ViewGroup parent) {
             if (convertView == null) {
-                convertView = getActivity().getLayoutInflater();
+                convertView = getActivity().getLayoutInflater().inflate(R.layout.fragment_beer_calculator, null);
             }
+
+            Log.d(TAG, "The beer calculator was opened.");
+
+            TextView recipeTextView = (TextView)convertView.findViewById(R.id.testing);
+            recipeTextView.setText("Stuff has happend");
+
+            return convertView;
         }
     }
 
