@@ -1,7 +1,7 @@
-package com.example.pltw.bdocraftingcalculator;
+package com.calculator.bdo.bdocraftingcalculator;
 
 /**
- * Created by dhampton on 4/11/17.
+ * Created by dhampton on 4/12/17.
  */
 
 public class Item {
@@ -9,6 +9,11 @@ public class Item {
         this.name = "nothing";
         this.detail = "nothing is here";
         this.amount = 0;
+    }
+    public Item(String name, String detail){
+        this.name = name;
+        this.detail = detail;
+        this.amount = 1;
     }
     public Item(String name, String detail, Integer amount){
         this.name = name;
